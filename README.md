@@ -1,6 +1,6 @@
 # Barrio Pizza — Reciclaje Inteligente
 
-Sistema de fidelización que recompensa el reciclaje con puntos canjeables por pizza. Clientes depositan reciclables en estaciones inteligentes, ganan EcoRewards y canjean cupones en Barrio Pizza.
+Sistema de fidelización que recompensa el reciclaje con puntos canjeables por cupones. Los clientes depositan basura en los basureros inteligentes, ganan EcoRewards y canjean cupones en Barrio Pizza.
 
 ## Stack
 
@@ -24,10 +24,8 @@ Sistema de fidelización que recompensa el reciclaje con puntos canjeables por p
 | Servicio           | Puerto |
 | ------------------ | ------ |
 | Backend (Express)  | `3000` |
-| Frontend (Next.js) | `3010` |
+| Frontend (Next.js) | `3001` |
 | Redis              | `6379` |
-
-> Si el frontend y el backend colisionan en el puerto 3000, matá uno y dejá el backend en 3000. El frontend preguntará si usar otro puerto (ej. 3010). La API_URL ya está configurada en `src/frontend/.env.local` apuntando a `http://localhost:3000`.
 
 ## Setup
 
