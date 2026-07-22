@@ -1,0 +1,46 @@
+{
+  "name": "barriopizza-reciclaje",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Barrio Pizza — Reciclaje Inteligente: sistema de fidelización con recompensas por reciclaje",
+  "scripts": {
+    "dev:backend": "ts-node-dev --respawn src/backend/main.ts",
+    "dev:worker": "ts-node-dev --respawn src/worker/main.ts",
+    "build": "tsc",
+    "start:backend": "node dist/backend/main.js",
+    "start:worker": "node dist/worker/main.js",
+    "lint": "eslint src --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "seed": "ts-node src/shared/seed.ts",
+    "test": "vitest run",
+    "test:frontend": "cd src/frontend && vitest run"
+  },
+  "dependencies": {
+    "bullmq": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.0",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "ioredis": "^5.4.0",
+    "jsonwebtoken": "^9.0.2",
+    "reflect-metadata": "^0.2.1",
+    "sql.js": "^1.10.0",
+    "typeorm": "^0.3.20",
+    "uuid": "^9.0.1",
+    "zod": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jsonwebtoken": "^9.0.5",
+    "@types/node": "^20.11.0",
+    "@types/sql.js": "^1.4.9",
+    "@types/supertest": "^7.2.0",
+    "@types/uuid": "^9.0.7",
+    "eslint": "^8.56.0",
+    "supertest": "^7.2.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3",
+    "vitest": "^4.1.10"
+  }
+}

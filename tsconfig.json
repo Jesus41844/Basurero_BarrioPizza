@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "lib": ["ES2022"],
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "baseUrl": ".",
+    "paths": {
+      "@backend/*": ["src/backend/*"],
+      "@worker/*": ["src/worker/*"],
+      "@shared/*": ["src/shared/*"]
+    }
+  },
+  "include": ["src/backend/**/*", "src/worker/**/*", "src/shared/**/*"],
+  "exclude": ["node_modules", "dist", "src/frontend"]
+}
